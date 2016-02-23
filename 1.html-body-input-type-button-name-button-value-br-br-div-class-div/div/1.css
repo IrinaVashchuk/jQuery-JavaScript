@@ -1,0 +1,16 @@
+div {float: clear;
+    display: inline-block;
+    width:25px;
+    height:25px;
+    margin-bottom:5px;
+    background:white;
+    border:2px solid black;    
+}
+
+.colored {background:yellow;
+}
+
+.uncolored {background:white;
+}
+
+.clear{}

@@ -1,0 +1,12 @@
+$(document).ready(function(){
+$('.div').append(<div></div>);
+    });
+    
+  $('div').mouseenter(function(){
+  $(this).addClass('colored'); 
+  });
+  
+   $('div').mouseleave(function(){
+  $(this).addClass('uncolored');  
+  });
+});

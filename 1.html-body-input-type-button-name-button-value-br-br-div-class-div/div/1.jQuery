@@ -1,12 +1,18 @@
+for (var x=1; x < 257; x++){
+  var d = document.createElement('div');
+  d.className='div_one';
+  document.body.appendChild(d);
+ }
+
 $(document).ready(function(){
-$('.div').append(<div></div>);
-    });
-    
-  $('div').mouseenter(function(){
-  $(this).addClass('colored'); 
-  });
-  
-   $('div').mouseleave(function(){
-  $(this).addClass('uncolored');  
-  });
-});
+
+   $('div').mouseenter(function(){
+   $(this).removeClass("div_one")
+   $(this).addClass('colored'); 
+   });
+   
+    $('div').mouseleave(function(){
+    $('div').removeClass("colored")
+   $(this).addClass('div_one');  
+   });
+ });

@@ -1,4 +1,4 @@
-div {float: clear;
+.div_one {float: clear;
     display: inline-block;
     width:25px;
     height:25px;
@@ -9,8 +9,3 @@ div {float: clear;
 
 .colored {background:yellow;
 }
-
-.uncolored {background:white;
-}
-
-.clear{}

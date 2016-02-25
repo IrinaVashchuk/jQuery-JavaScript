@@ -1,13 +1,11 @@
 for (var x=0; x < 256; x++){
-   var d = document.createElement('div');
-   d.className='div_one';
+   var d = document.createElement('div');   
    document.body.appendChild(d);
   }
   
   
 $(document).ready(function(){
    $('div').mouseenter(function(){
-    $(this).removeClass('div_one'); 
    $(this).addClass('colored'); 
    });
   });
@@ -20,13 +18,12 @@ $(document).ready(function(){
 $("div").remove();
 for (var x=0; x < num; x++){
    var d = document.createElement('div');
-   d.className='div_one';
    document.body.appendChild(d);
   }
  
    $('div').mouseenter(function(){
-   $(this).removeClass('div_one'); 
    $(this).addClass('colored'); 
+   
    });
   });
 }

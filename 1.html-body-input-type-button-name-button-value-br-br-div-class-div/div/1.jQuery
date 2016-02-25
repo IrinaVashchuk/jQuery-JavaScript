@@ -1,18 +1,32 @@
-for (var x=1; x < 257; x++){
-  var d = document.createElement('div');
-  d.className='div_one';
-  document.body.appendChild(d);
- }
-
+for (var x=0; x < 256; x++){
+   var d = document.createElement('div');
+   d.className='div_one';
+   document.body.appendChild(d);
+  }
+  
+  
 $(document).ready(function(){
-
    $('div').mouseenter(function(){
-   $(this).removeClass("div_one")
+    $(this).removeClass('div_one'); 
    $(this).addClass('colored'); 
    });
-   
-    $('div').mouseleave(function(){
-    $('div').removeClass("colored")
-   $(this).addClass('div_one');  
+  });
+
+var button = document.getElementById("button");
+button.onclick = function() {
+var num = prompt("How many squares?");
+
+$(document).ready(function(){
+$("div").remove();
+for (var x=0; x < num; x++){
+   var d = document.createElement('div');
+   d.className='div_one';
+   document.body.appendChild(d);
+  }
+ 
+   $('div').mouseenter(function(){
+   $(this).removeClass('div_one'); 
+   $(this).addClass('colored'); 
    });
- });
+  });
+}
